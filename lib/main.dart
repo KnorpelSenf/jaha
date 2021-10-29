@@ -1,6 +1,11 @@
+import 'dart:math';
+
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
+
+var rng = Random();
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -27,8 +32,14 @@ class MyApp extends StatelessWidget {
     );
     var button = ElevatedButton(
       onPressed: () {
-        // Respond to button press
-        print('Yay');
+        var audioPlayer = AudioPlayer();
+        var n = rng.nextInt(10);
+        audioPlayer.play('./audio-files/short/' + n.toString() + '.m4a');
+      },
+      onLongPress: () {
+        var audioPlayer = AudioPlayer();
+        var n = rng.nextInt(3);
+        audioPlayer.play('./audio-files/long/' + n.toString() + '.m4a');
       },
       child: null,
       autofocus: true,
