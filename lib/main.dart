@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     const textStyle = TextStyle(
       color: Colors.white,
-      fontSize: 150,
+      fontSize: 130,
       fontWeight: FontWeight.w900,
     );
     const label = Text(
@@ -52,7 +52,9 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.black,
         body: Center(
             child: Column(
-          children: [label, button],
+          children: [button, label],
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.end,
         )),
       ),
     );
