@@ -27,19 +27,19 @@ class MyApp extends StatelessWidget {
       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(120),
-              side: const BorderSide(color: Colors.red))),
+              side: const BorderSide(color: Colors.redAccent))),
       minimumSize: MaterialStateProperty.all(const Size(240, 240)),
     );
     var button = ElevatedButton(
       onPressed: () {
         var audioPlayer = AudioPlayer();
         var n = rng.nextInt(10);
-        audioPlayer.play('./audio-files/short/' + n.toString() + '.m4a');
+        audioPlayer.play('./assets/audio-files/short/' + n.toString() + '.m4a');
       },
       onLongPress: () {
         var audioPlayer = AudioPlayer();
         var n = rng.nextInt(3);
-        audioPlayer.play('./audio-files/long/' + n.toString() + '.m4a');
+        audioPlayer.play('./assets/audio-files/long/' + n.toString() + '.m4a');
       },
       child: null,
       autofocus: true,
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      title: 'Ja-Ja-Jaha MX',
       home: Scaffold(
         backgroundColor: Colors.black,
         body: Center(
