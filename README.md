@@ -1,16 +1,17 @@
-# ja_ja_jaha
+# Ja-Ja-Jaha MX
 
-A new Flutter project.
+En liten pad som er proppafull med bekreftelser!
+Laget etter sketsjen «Ja-Ja-Jaha MX» i UKErevyen 2021 RAZZMATAZZ med original lydopptak fra selve forestillingene.
 
-## Getting Started
+Trykk på knappen for en JA.
+Hold knappen når venninna di ringer og har alt for mye på hjertet.
+OH JAAA!
 
-This project is a starting point for a Flutter application.
+## Building the app
 
-A few resources to get you started if this is your first Flutter project:
+This is a [Flutter](https://flutter.dev) application.
+It is hosted at https://ja-ja-jaha.me and available in the Google Play Store.
+A build for iOS follows perhaps at some point, or not, we will see.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+In order to build the app locally, you need a working Flutter environment.
+There are no further things to regard, simply work with it as with any other Flutter app.
