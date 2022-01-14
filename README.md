@@ -11,7 +11,7 @@ OH JAAA!
 
 This is a [Flutter](https://flutter.dev) application.
 It is hosted at <https://ja-ja-jaha.me> and available in the Google Play Store.
-A build for iOS follows perhaps at some point, or not, we will see.
+A build for iOS is not going to follow because, well, Apple.
 
 In order to build the app locally, you need a working Flutter environment.
 There are no further things to regard, simply work with it as with any other Flutter app.
