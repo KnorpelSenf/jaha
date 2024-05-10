@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -33,14 +32,14 @@ class MyApp extends StatelessWidget {
     );
     var button = ElevatedButton(
       onPressed: () async {
-        var audioPlayer = AudioCache();
+        var audioPlayer = AudioPlayer();
         var n = rng.nextInt(10);
-        await audioPlayer.play('short-' + n.toString() + '.m4a');
+        await audioPlayer.play(AssetSource('short-' + n.toString() + '.m4a'));
       },
       onLongPress: () async {
-        var audioPlayer = AudioCache();
+        var audioPlayer = AudioPlayer();
         var n = rng.nextInt(3);
-        await audioPlayer.play('long-' + n.toString() + '.m4a');
+        await audioPlayer.play(AssetSource('long-' + n.toString() + '.m4a'));
       },
       child: null,
       autofocus: true,
